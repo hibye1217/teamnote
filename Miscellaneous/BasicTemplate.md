@@ -79,6 +79,7 @@ import sys; input = lambda: sys.stdin.readline().rstrip('\n')
 from functools import cmp_to_key
 sort = lambda arr, cmp: arr.sort(key=cmp_to_key(cmp))
 inputs = lambda t, l=tuple: l(map(t, input().split()))
+sys.setrecursionlimit(10**6)
 ```
 
 Basically...
@@ -86,3 +87,4 @@ Basically...
 - `sort(arr, cmp)` sorts `arr` using `cmp` as a compare function.
 - `inputs(int)` returns inputted space-seperated integers to tuple.
 - ... while `inputs(float, list)` returns real number inputs into list.
+- We also set the recursion limit to $10^6$; Exact limit might vary.
